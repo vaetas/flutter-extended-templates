@@ -1,0 +1,110 @@
+<templateSet group="Flutter Extended">
+  <template name="blb" value="BlocBuilder&lt;$bloc$, $state$&gt;(&#10;    builder: (context, state) {&#10;        $END$&#10;    },&#10;)" description="Bloc Builder" toReformat="false" toShortenFQNames="true">
+    <variable name="bloc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="bll" value="BlocListener&lt;$bloc$, $state$&gt;(&#10;    listener: (context, state) {&#10;        $END$&#10;    },&#10;)" description="Bloc Listener" toReformat="false" toShortenFQNames="true">
+    <variable name="bloc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="funion" value="@freezed&#10;abstract class $name$ with _$$$name$ {&#10;  $END$&#10;}" description="freezed union" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="blc" value="BlocConsumer&lt;$bloc$, $state$&gt;(&#10;    listener: (context, state) {&#10;    &#10;    },&#10;    builder: (context, state) {&#10;        $END$&#10;    },&#10;)" description="Bloc Consumer" toReformat="false" toShortenFQNames="true">
+    <variable name="bloc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="fimport" value="import 'package:flutter/foundation.dart';&#10;import 'package:freezed_annotation/freezed_annotation.dart';&#10;&#10;part '$file$.freezed.dart';&#10;&#10;$END$" description="Freezed imports" toReformat="false" toShortenFQNames="true">
+    <variable name="file" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="cf" value="const factory $class$.$name$($END$) = _$class$$nameCap$;" description="const factory (freezed)" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="nameCap" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="cpf" value="const factory $class$.$name$($END$) = $class$$nameCap$;" description="const public factory (freezed)" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="nameCap" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="bloc" value="import 'package:flutter_bloc/flutter_bloc.dart';&#10;&#10;class $name$ extends Bloc&lt;$event$, $state$&gt; {&#10;  /// The initial state of the `CounterBloc` is 0.&#10;  $name$() : super($initialState$);&#10;&#10;  @override&#10;  Stream&lt;$state$&gt; mapEventToState($event$ event) async* {&#10;    $END$&#10;  }&#10;}" description="BLoC" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="event" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="initialState" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="cubit" value="import 'package:flutter_bloc/flutter_bloc.dart';&#10;&#10;class $name$ extends Cubit&lt;$state$&gt; {&#10;  $name$() : super($initialState$);&#10;&#10;  $END$&#10;}&#10;" description="Cubit" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="initialState" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="cc" value="const $class$($END$);" description="const constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="logx" value="Log.d('$text$', name: '$name$');" description="LogX" toReformat="false" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="dartClassNameMethodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="gapv" value="const SizedBox(height: $height$)$END$" description="SizedBox vertical gap" toReformat="false" toShortenFQNames="true">
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="gaph" value="const SizedBox(width: $width$)$END$" description="SizedBox horizontal gap" toReformat="false" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="blimport" value="import 'package:flutter_bloc/flutter_bloc.dart';" description="flutter_bloc import" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="printx" value="print('[$name$] $END$');" description="print extended" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="dartClassNameMethodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cstless" value="class $NAME$ extends StatelessWidget {&#10;  const $NAME$();&#10;  &#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return $END$;&#10;  }&#10;}&#10;" description="const stateless widget" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+</templateSet>
