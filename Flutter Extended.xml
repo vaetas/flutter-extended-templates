@@ -48,16 +48,16 @@
       <option name="DART" value="true" />
     </context>
   </template>
-  <template name="bloc" value="import 'package:flutter_bloc/flutter_bloc.dart';&#10;&#10;class $name$ extends Bloc&lt;$event$, $state$&gt; {&#10;  /// The initial state of the `CounterBloc` is 0.&#10;  $name$() : super($initialState$);&#10;&#10;  @override&#10;  Stream&lt;$state$&gt; mapEventToState($event$ event) async* {&#10;    $END$&#10;  }&#10;}" description="BLoC" toReformat="false" toShortenFQNames="true">
+  <template name="bloc" value="import 'package:bloc/bloc.dart';&#10;&#10;class $name$Bloc extends Bloc&lt;$event$, $state$&gt; {&#10;  $name$Bloc() : super($initialState$);&#10;&#10;  @override&#10;  Stream&lt;$state$&gt; mapEventToState($event$ event) async* {&#10;    $END$&#10;  }&#10;}" description="BLoC" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="event" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="event" expression="&quot;Event&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="state" expression="&quot;State&quot;" defaultValue="" alwaysStopAt="true" />
     <variable name="initialState" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART" value="true" />
     </context>
   </template>
-  <template name="cubit" value="import 'package:flutter_bloc/flutter_bloc.dart';&#10;&#10;class $name$ extends Cubit&lt;$state$&gt; {&#10;  $name$() : super($initialState$);&#10;&#10;  $END$&#10;}&#10;" description="Cubit" toReformat="false" toShortenFQNames="true">
+  <template name="cubit" value="import 'package:bloc/bloc.dart';&#10;&#10;class $name$ extends Cubit&lt;$state$&gt; {&#10;  $name$() : super($initialState$);&#10;&#10;  $END$&#10;}&#10;" description="Cubit" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="initialState" expression="" defaultValue="" alwaysStopAt="true" />
@@ -105,6 +105,12 @@
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="copyWith" value="$class$ copyWith() {&#10;  return $class$(&#10;    $END$&#10;  );&#10;}" description="copyWith method" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
     </context>
   </template>
 </templateSet>
