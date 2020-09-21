@@ -107,10 +107,16 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
+<<<<<<< HEAD
   <template name="copyWith" value="$class$ copyWith() {&#10;  return $class$(&#10;    $END$&#10;  );&#10;}" description="copyWith method" toReformat="false" toShortenFQNames="true">
     <variable name="class" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART" value="true" />
+=======
+  <template name="st" value="setState(() {&#10;  $SELECTION$&#10;});" description="set state" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+>>>>>>> fdc7ded7fbe7a3f8ee8bd79b09156cfc0151e18a
     </context>
   </template>
 </templateSet>
